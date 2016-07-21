@@ -1,4 +1,4 @@
 #!/bin/bash
 
-git show $1 | grep -v '^-' | sed 's/^\+//g' | tee extract.txt
+git --no-pager show $1 | grep -v '^-' | sed 's/^\+//g' | tee extract.txt
 
