@@ -1,0 +1,50 @@
+﻿Saving and restoring window positions under the X Window System by the
+command line, GPLv3 swalt.org 2016.
+
+Description of the concept and the development of an appropriate script. The
+command line tool for controlling windows I use is wmctrl, for its
+basic syntax please consult 'man wmctrl'.
+
+The idea is the following:
+
+1. Placing the windows graphically with the mouse
+
+2. Storing their positions to a file with wmctrl 
+
+3. Automatically set the windows positions by loading the previously gathered
+		file with wmctrl
+
+
+Unfortunately wmctrl produces a window list which is different from what it expects
+as input format to set the windows positions, as explained below, so we have to do
+some string manipulations, some sort of "word processing", you know ;-)
+
+
+------------------------------------------------------------------------------
+
+1. Arrange the windows graphically with the mouse until the layout fits your
+		needs
+
+2. 'wmctrl -lG' delivers something like this:
+
+		0x07800011  0 3587 171  882  1102 core-i7 Firefox
+
+which is essentially ok, although, as already mentioned above, it doesn't fit
+ 	the input format which wmctrl is expecting, which should look like this:
+
+		wmctrl -r Firefox -e "0,30,30,1717,1083" 
+	
+Therefore we have to transform the given output in a appropriate manner. As
+	this task requires several steps, it resides in a seperate file named
+	ah_transforming_steps.txt.
+	
+Currently sometimes after placing the windows with wmctrl there is a mess
+	with wrong placed windows which aren't responding correctly to mouse
+	input, at least under the unity Desktop, other Desktops I didn't test so far.
+	
+At least the windows responding issue can be fixed by reloading the windows
+	manager (in case of unity: 'compiz --replace &'). Don't forget the plus sign
+	unless you rest with a unresponsive UI in case you shut down the window 
+	manager in the shell.
+	
+		 

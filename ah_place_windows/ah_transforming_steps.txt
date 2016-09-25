@@ -1,0 +1,64 @@
+
+Removing multiple occurencies of the space sign:
+
+	cat ah_window_list.txt | tr --squeeze ' ' | tee 1
+
+transforms
+
+	0x08600001  0 2164 260  1474 1006 core-i7 FVD Speed Dial - Google Chrome
+
+to
+
+	0x08600001 0 2164 260 1474 1006 core-i7 FVD Speed Dial - Google Chrome
+
+further
+
+	cat 1 | cut --delimiter=' ' -f2-6 | tee 2	
+
+delivers the window positions and dimensions:
+
+	0 2164 260 1474 1006
+
+while
+
+	cat 1 | cut --delimiter=' ' -f8-100 | tee 3
+
+excerpts the window names:
+
+	FVD Speed Dial - Google Chrome	
+
+cat 3_ah_windows_names.txt | sed -e 's/^/wmctrl -r /g' | tee 4_ah_windows_names_with_wmctrl_command.txt
+
+leads to:
+
+	wmctrl -r FVD Speed Dial - Google Chrome
+
+cat 2_ah_windows_positions_and_dimensions.txt | tr ' ' ',' | tee 5_ah_windows_positions_and_dimensions. 2_ah_windows_positions_and_dimensions_with_commas.txt
+
+delivers:
+
+0,2164,260,1474,1006
+
+cat 5_ah_windows_positions_and_dimensions_with_commas.txt | sed -e 's/^/ -e "/g' | tee 6_ah_windows_positions_and_dimensions_with_option_string.txt
+
+adds the option sting:
+
+ -e "0,2164,260,1474,1006
+
+ and
+
+ cat 6_ah_windows_positions_and_dimensions_with_option_string.txt | sed -e 's/$/"/g' | tee 7_ah_windows_positions_and_dimensions_with_trailing_quote.txt
+
+ adds the trailing quote.
+
+paste 4_ah_windows_names_with_wmctrl_command.txt 7_ah_windows_positions_and_dimensions_with_trailing_quote.txt | tee 8_ah_place_windows_with_multiple_space_characters.txt
+
+joins window names and dimenisons together
+
+and finally
+
+cat 8_ah_place_windows_with_multiple_space_characters.txt | tr --delete '\t()' | tee ah_place_windows
+
+removes the extra tabulator characters and parenthesis and write the executable file.
+
+

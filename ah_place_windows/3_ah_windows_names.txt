@@ -1,0 +1,27 @@
+XdndCollectionWindowImp
+unity-launcher
+unity-launcher
+unity-panel
+unity-panel
+unity-dash
+Hud
+andih@core-i7: ~
+andih@core-i7 (10.0.0.20) - byobu
+andih@core-i7: /mnt/ah_synodisk/kmu-net.ch/Projekte/core-i7/ah_place_windows
+xosview@core-i7
+Sensorbetrachter
+H E W L E T T · P A C K A R D 15C
+Anki - andih
+Oracle VM VirtualBox Manager
+FVD Speed Dial - Google Chrome
+planer_andi.vl3 - Vault 3 
+Portal › ubuntuusers.de - Mozilla Firefox
+[Blender] *{7,3} Surfboard* For our tenth anniversary... - Mozilla Thunderbird 10.0.12
+ah_place_windows – Dolphin
+PulseAudio Multiband EQ [Enabled]
+/../mnt/ah_zfs_tank2/portabel/KeePass-1.18/ahDatabase.kdb - KeePassX
+Neuer Tab - Google Chrome
+concept.txt (/mnt/ah_synodisk/kmu-net.ch/Projekte/core-i7/ah_place_windows) - VIM
+gathering - GoldenDict
+gitk: ah_place_windows
+Git Gui (ah_place_windows) /mnt/ah_synodisk/kmu-net.ch/Projekte/core-i7/ah_place_windows

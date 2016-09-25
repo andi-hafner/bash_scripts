@@ -1,0 +1,26 @@
+#!/bin/bash
+
+# ah_place_windows V 0.1 swalt.org 2016
+
+# The option '-a' gives the focus to the addressed window, the other options
+# 	should be self explaining according to their values.
+
+# wmctrl -r andih@core-i7 10.0.0.20 - byobu -e "0,2032,109,1303,1015"
+
+wmctrl -r 15C -e "0,1316,763,596,431"
+wmctrl -r Anki -e "0,6762,690,1125,641"
+wmctrl -r VirtualBox -e "0,3591,59,882,1102"
+wmctrl -r Chrome -e "0,2164,260,1474,1006"
+wmctrl -r Vault -e "0,3460,913,948,656"
+wmctrl -r Firefox -e "0,63,64,1562,1122"
+wmctrl -r Thunderbird -e "0,75,68,1528,1115"
+wmctrl -r Dolphin -e "0,60,70,1572,1119"
+wmctrl -r EQ -e "0,1996,1276,745,297"
+wmctrl -r GoldenDict -e "0,305,122,1109,884"
+wmctrl -r Sensorbetrachter -e "0,1645,301,346,446" -b "toggle,sticky"
+wmctrl -a Sensorbetrachter
+wmctrl -r xosview -e "0,1645,56,271,426" -b "toggle,sticky"
+wmctrl -a xosview
+wmctrl -r KeePass -e "0,101,413,1455,701" -b "toggle,sticky"
+wmctrl -a KeePass
+
