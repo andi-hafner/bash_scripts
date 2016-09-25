@@ -1,0 +1,1 @@
+﻿avconv -ss 0 -i -acodec copy -vcodec copy -t 0 /mnt/lv_md0/out.mp4
