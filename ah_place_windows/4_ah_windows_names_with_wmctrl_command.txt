@@ -1,0 +1,27 @@
+wmctrl -r XdndCollectionWindowImp
+wmctrl -r unity-launcher
+wmctrl -r unity-launcher
+wmctrl -r unity-panel
+wmctrl -r unity-panel
+wmctrl -r unity-dash
+wmctrl -r Hud
+wmctrl -r andih@core-i7: ~
+wmctrl -r andih@core-i7 (10.0.0.20) - byobu
+wmctrl -r andih@core-i7: /mnt/ah_synodisk/kmu-net.ch/Projekte/core-i7/ah_place_windows
+wmctrl -r xosview@core-i7
+wmctrl -r Sensorbetrachter
+wmctrl -r H E W L E T T · P A C K A R D 15C
+wmctrl -r Anki - andih
+wmctrl -r Oracle VM VirtualBox Manager
+wmctrl -r FVD Speed Dial - Google Chrome
+wmctrl -r planer_andi.vl3 - Vault 3 
+wmctrl -r Portal › ubuntuusers.de - Mozilla Firefox
+wmctrl -r [Blender] *{7,3} Surfboard* For our tenth anniversary... - Mozilla Thunderbird 10.0.12
+wmctrl -r ah_place_windows – Dolphin
+wmctrl -r PulseAudio Multiband EQ [Enabled]
+wmctrl -r /../mnt/ah_zfs_tank2/portabel/KeePass-1.18/ahDatabase.kdb - KeePassX
+wmctrl -r Neuer Tab - Google Chrome
+wmctrl -r concept.txt (/mnt/ah_synodisk/kmu-net.ch/Projekte/core-i7/ah_place_windows) - VIM
+wmctrl -r gathering - GoldenDict
+wmctrl -r gitk: ah_place_windows
+wmctrl -r Git Gui (ah_place_windows) /mnt/ah_synodisk/kmu-net.ch/Projekte/core-i7/ah_place_windows

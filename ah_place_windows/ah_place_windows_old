@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Fenster positionieren nach Start von core-i7, copyleft kmu-net.ch 2013
+
+# Version für Gnome 3
+
+wmctrl -r Thunderbird -t 1
+wmctrl -r Vault -t 1
+wmctrl -r Anki -t 1
+wmctrl -r VirtualBox -t 2
+wmctrl -r 15C -t 2
+wmctrl -r Chrome -e "0,1960,60,1661,1170"
+wmctrl -r Dolphin -e "0,60,60,1717,1002"
+wmctrl -r Firefox -e "0,30,30,1717,1083"
+wmctrl -a Firefox
+wmctrl -a KeePass
+
