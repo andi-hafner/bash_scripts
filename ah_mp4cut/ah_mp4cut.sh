@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Version 1.0
+
 input_file=$1
 echo "Input_file: $input_file"
 

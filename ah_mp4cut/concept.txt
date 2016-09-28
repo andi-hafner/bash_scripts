@@ -1,1 +1,1 @@
- 
+﻿Syntax: ah_mp4cut source_file start_time end_time destination_file
