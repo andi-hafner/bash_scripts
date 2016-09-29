@@ -68,8 +68,8 @@ main() {
 	duration="$(expr $end - $start)"
 	echo "Lenght of extraction in seconds: $duration"
 
-	echo "avconv -ss $start -i $input_file -acodec copy -vcodec copy -t $duration $destination_file"
-	#avconv -ss $start -i $input_file -acodec copy -vcodec copy -t $duration $destination_file
+	#echo "avconv -ss $start -i $input_file -acodec copy -vcodec copy -t $duration $destination_file"
+	avconv -ss $start -i $input_file -acodec copy -vcodec copy -t $duration $destination_file
 
 }
 
