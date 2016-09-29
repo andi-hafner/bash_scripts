@@ -1,8 +1,8 @@
 #!/bin/bash
 
-show_help() {                                                                   
-echo -e "                                                                       
-ah_videocut (ɔ) kmu-net.ch / andihafner.com 2016 GPLv3                     
+show_help() {
+echo -e "
+ah_videocut (ɔ) kmu-net.ch / andihafner.com 2016 GPLv3
 Version 1.03, added '_x' prefix to extracted output file
 
 Simple shell script which cuts unwanted lead-in and lead-out from e.g. TV
@@ -21,7 +21,7 @@ Syntax:
 Available options:
 
  --help or -h        Shows this help text\n"
-}        
+}
 
 #-------------------------------------------------------------------------------
 
@@ -82,8 +82,8 @@ case "$1" in
 
 	""|"--help"|"-h")    show_help;;
 
-  *)                   init $1
-	                     main $2 $3;;	
+    *)                   init $1
+	                     main $2 $3;;
 
 esac
 
