@@ -3,7 +3,7 @@
 show_help() {                                                                   
 echo -e "                                                                       
 ah_videocut (ɔ) kmu-net.ch / andihafner.com 2016 GPLv3                     
-Version 1.02, added info and syntax help
+Version 1.03, added '_x' prefix to extracted output file
 
 Simple shell script which cuts unwanted lead-in and lead-out from e.g. TV
 recordings WITHOUT REENCODING using the ffmpeg library.
@@ -30,6 +30,8 @@ Todo:
 
  - Let user choose output destination
 
+ - Move extracted Video back to source directory
+
  - Test mode (just print out the resulted ffmpeg command sequence)
 "
 
@@ -40,7 +42,8 @@ init() {
 	input_file=$1
 	echo "Input_file: $input_file"
 
-	destination_file="/mnt/lv_md0/$input_file"
+	destination_file_temp="/mnt/lv_md0/$input_file"
+	destination_file=$(echo $destination_file_temp | sed 's/\./_x\./g')
 	echo "Destination_file: $destination_file"
 
 }
